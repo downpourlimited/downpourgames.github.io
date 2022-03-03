@@ -37,10 +37,31 @@
             font-size: 4em;
         }
 
-        form, input, label  {
-            /* appearance: none; */
+        form,
+        input,
+        label {
+            appearance: none;
             font-size: inherit;
             font-family: inherit;
+            border-radius: 4px;
+            padding: 8px 16px;
+            border: none;
+        }
+
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: #736EFE;
+            color: #EFF0FF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #C2C4FF;
+            opacity: 1;
+            /* Firefox */
         }
 
         input {
@@ -59,25 +80,25 @@
     <div id="copy">
 
         Downpour is a new tool for making games on your phone, being developed by <a href="https://v21.io">v
-            buckenham</a>. It is quick, free and fun to use. 
-            <br><br>
-           
-            
+            buckenham</a>. It will be quick, free and fun to use.
+        <br><br>
 
 
-            <form
-  action="https://buttondown.email/api/emails/embed-subscribe/downpour"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/downpour', 'popupwindow')"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">If you're interested in beta testing Downpour, you can sign up here:</label>
-  <br>
-  <input type="email" name="email" id="bd-email" placeholder="email@address.com"/>
-  <input type="submit" value="Subscribe" />
-</form>
-<span style="font-size:75%">Or, if you are in London in early April, you can come along to <a href="https://nowplaythis.net/2022-festival/">Now Play This</a>, where an early version will be playable.</span>
+
+
+        <form action="https://buttondown.email/api/emails/embed-subscribe/downpour" method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/downpour', 'popupwindow')"
+            class="embeddable-buttondown-form">
+            <label for="bd-email">If you're interested in beta testing Downpour, you can sign up here:</label>
+            <br>
+            <input type="email" name="email" id="bd-email" placeholder="email@address.com" />
+            <input type="submit" value="Subscribe" />
+        </form>
+        <span style="font-size:75%">
+            Or, if you are in London in early April, you can come along to <a
+                href="https://nowplaythis.net/2022-festival/">Now Play This</a>, where an early version will be
+            playable.
+        </span>
 
     </div>
 </body>
