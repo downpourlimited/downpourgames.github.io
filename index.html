@@ -12,6 +12,7 @@
         body {
             margin: 0;
             min-height: 100%;
+            text-size-adjust: 300%;
             font-family: 'IBM Plex Sans Condensed', sans-serif;
             text-align: center;
             font-size: 1.5em;
@@ -40,6 +41,8 @@
         form,
         input,
         label {
+
+            text-size-adjust: inherit;
             appearance: none;
             font-size: inherit;
             font-family: inherit;
@@ -71,6 +74,10 @@
         a {
             color: #736EFE;
         }
+
+        .screenshot {
+            max-height: 80vh;
+        }
     </style>
 </head>
 
@@ -86,7 +93,12 @@
         <p>
             Downpour is being developed by <a href="https://v21.io">v buckenham</a>, and is planned for release on iOS
             and Android later in 2022.
+
+            It looks something like this:
         </p>
+
+        <img class="screenshot" src="assets/downpour_screenshot.png">
+        <br>
         <br>
 
 
